@@ -5,13 +5,10 @@
 
 // #include "config.h"
 // #include "globals.h"
-#include "pidloop.h"
 
 typedef struct
 {
-    uint32_t sensor_loop_ms;         // Sensor poll loop-time
-	PIDLoop::pidloop_settings_t pid1;
-	PIDLoop::pidloop_settings_t pid2;
+    uint32_t example;
 } settings_t;
 
 class SettingsManager : public NVSettings

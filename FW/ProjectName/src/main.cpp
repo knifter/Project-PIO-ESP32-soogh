@@ -1,5 +1,4 @@
 #include <Arduino.h>
-#include <SHT3X.h>
 
 #include "config.h"
 #include "globals.h"
@@ -7,7 +6,7 @@
 #include "pid.h"
 #include "screens.h"
 
-#include "tools-log.h"
+//#include "tools-log.h"
 
 void halt(const char*);
 uint32_t scan_keys();
@@ -45,8 +44,8 @@ void loop()
 
 void halt(const char* error)
 {
-	gui.showMessage("ERROR:", error);
-	DBG("HALT: %s", error);
+	gui.showMessage("HALT:", error);
+	// DBG("HALT: %s", error);
 	while(true)
 		gui.loop();
 };

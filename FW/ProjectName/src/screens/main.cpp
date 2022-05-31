@@ -18,8 +18,9 @@ MainScreen::MainScreen(SooghGUI& g) : Screen(g)
 {
 };
 
-bool MainScreen::loop()
+void MainScreen::loop()
 {
+    return;
 };
 
 bool MainScreen::handle(soogh_event_t key)

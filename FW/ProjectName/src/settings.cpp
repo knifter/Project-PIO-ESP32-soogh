@@ -24,33 +24,11 @@ bool SettingsManager::set_defaults_since(const uint32_t data_version)
         case 0: // empty blob
             DBG("Init settings v0: defaults");
             memset(_data, 0, _data_size);
-            settings->pid1.active = false;
-            settings->pid1.mode = PIDLoop::MODE_ZP;
-            settings->pid1.pin_n = 0;
-            settings->pid1.pin_p = 0;
-            settings->pid1.fpid.kF = DEFAULT_PID_F;
-            settings->pid1.fpid.kP = DEFAULT_PID_P;
-            settings->pid1.fpid.kI = DEFAULT_PID_I;
-            settings->pid1.fpid.kD = DEFAULT_PID_D;
-            settings->pid1.fpid.setpoint = DEFAULT_SETPOINT;
-
-            settings->pid2.active = false;
-            settings->pid2.mode = PIDLoop::MODE_ZP;
-            settings->pid2.pin_n = 0;
-            settings->pid2.pin_p = 0;
-            settings->pid2.fpid.kF = DEFAULT_PID_F;
-            settings->pid2.fpid.kP = DEFAULT_PID_P;
-            settings->pid2.fpid.kI = DEFAULT_PID_I;
-            settings->pid2.fpid.kD = DEFAULT_PID_D;
-            settings->pid2.fpid.setpoint = DEFAULT_SETPOINT;
-
-        case 1:
-            DBG("Settings v1->v2: sensor_loop");
-            settings->sensor_loop_ms = DEFAULT_SENSOR_LOOP_MS;
+            settings->example = 0;
 
         // End with the current version:
-        case 2:
-            _data_version = 2;
+        case 1:
+            _data_version = 1;
             return true;
     };
 

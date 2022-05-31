@@ -32,9 +32,9 @@ void MenuScreen::load()
 	// Do not load my screen, menu is overlayed
 };
 
-bool MenuScreen::loop()
+void MenuScreen::loop()
 {    
-    return false;
+    return;
 };
 
 bool MenuScreen::handle(soogh_event_t e)
@@ -44,18 +44,18 @@ bool MenuScreen::handle(soogh_event_t e)
 		case KEY_A_SHORT:
 		case KEY_A_LONG:
 		case KEY_A_LONG_REPEAT:
-			menu.sendKey(TreeMenu::KEY_LEFT);
+			menu.sendKey(LV_KEY_LEFT);
 			break;
 		case KEY_B_SHORT:
-			menu.sendKey(TreeMenu::KEY_ENTER);
+			menu.sendKey(LV_KEY_ENTER);
 			break;
 		case KEY_C_SHORT:
 		case KEY_C_LONG:
 		case KEY_C_LONG_REPEAT:
-			menu.sendKey(TreeMenu::KEY_RIGHT);
+			menu.sendKey(LV_KEY_RIGHT);
 			break;
 		case KEY_B_LONG:
-			menu.sendKey(TreeMenu::KEY_ESC);
+			menu.sendKey(LV_KEY_ESC);
 			break;
 		case KEY_AC_LONG:
 			gui.popScreen();

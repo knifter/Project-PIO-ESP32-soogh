@@ -1,0 +1,6 @@
+[submodule "FW/ProjectName/lib/lib-soogh"]
+	path = FW/ProjectName/lib/lib-soogh
+	url = https://github.com/knifter/lib-soogh.git
+[submodule "FW/ProjectName/lib/lib-Tools"]
+	path = FW/ProjectName/lib/lib-Tools
+	url = https://github.com/knifter/lib-Tools.git

@@ -3,7 +3,6 @@
 #include "config.h"
 #include "globals.h"
 #include "settings.h"
-#include "pid.h"
 #include "screens.h"
 
 //#include "tools-log.h"

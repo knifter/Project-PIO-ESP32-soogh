@@ -27,9 +27,9 @@
 #define PIN_MISO				GPIO_NUM_13
 #define PIN_SCLK				GPIO_NUM_14
 
-#define PIN_BTN_A				GPIO_NUM_34
-#define PIN_BTN_B 				GPIO_NUM_35
-#define PIN_BTN_C 				GPIO_NUM_36
+#define PIN_BTN_A				GPIO_NUM_39
+#define PIN_BTN_B 				GPIO_NUM_38
+#define PIN_BTN_C 				GPIO_NUM_37
 
 #define PIN_SPEAKER             GPIO_NUM_25
 
